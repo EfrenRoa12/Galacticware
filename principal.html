@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxyware</title>
+    <!-- link para css -->
+    <link rel="stylesheet" href="principal.css">
+    <!-- fondo de icono -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- la parte de encabezado -->
+    <header>
+        <!-- es la imagen del logo de la parte izquierda -->
+        <a href="#" class="logo">
+            <span>Galaxy</span>Ware</a>
+
+            <!-- aqui realizaremos en menu responsive cuando tengamos un celular desaparezca y realiza otra forma -->
+            <!-- etiqueta de checkbox -->
+            <input type="checkbox" id="menu-bar">
+            <!-- icono para tipo hamburguesa -->
+            <label for="menu-bar" class="fa fa-bars"></label>
+
+
+
+        <!-- es la parte del menu  es la barra de navegacion-->
+        <!-- para hacer una sola linea de codigo debemos hacerlo repetir de una vez -->
+            <!-- nav.bar>a*6 -->
+            <nav class="navbar">
+                <a href="#inicio">Inicio</a>
+                <a href="#detalles">Detalle</a>
+                <a href="#acerca_de">Acerca de</a>
+                <a href="#opiniones">Opiniones</a>
+                <a href="#precios">precios</a>
+                <a href="#contactos">contactos</a>
+            </nav>
+    </header>
+    <!-- cada seccion contiene
+    inicio
+    detalles
+    acerca de
+    opiniones
+    precios
+    contactos
+    y lo enlazamos con sections de inicio asi sucesivamente pero lo haremos de manera ordenada
+    -->
+    <!-- ----------------------------------- es la parte de section inicio ------------------------------------ -->
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h3>Galaxy Ware <span>Desarrollo web</span></h3>
+            <p>
+            Creamos sitios web para cumplir necesidades del
+            cliente desde la perspectiva de colaboración. 
+            Encontrando solución y respuesta inmediata que se presenta.
+            </p>
+            <a href="#" class="btn">Mas detalles</a>
+        </div>
+        <div class="image">
+            <img src="imagenes/galaxy-ware.png" alt="">
+        </div>
+    </section>
+    <!-- ----------------------------------- es la parte de section Detalles ------------------------------------ -->
+    <section class="detalles" id="detalles">
+        <h1 class="heading">Funciones</h1>
+        <div class="caja-contenedor">
+            <!-- seccion de imagenes -->
+            <div class="caja">
+                <img src="/P_Yanclyon/Imagenes/roca.PNG" alt="">
+                <h3>Diseño web</h3>
+                <p>Desarrollamos tu sitio web con herramientas tecnologicas</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <!-- seccion de imagenes -->
+            <div class="caja">
+                <img src="/P_Yanclyon/Imagenes/volar.PNG" alt="">
+                <h3>Desarrollo web</h3>
+                <p>Creación de pagina web a tu medida según sea tus requerimientos a tiempo y forma</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <!-- seccion de imagenes -->
+            <div class="caja">
+                <img src="/P_Yanclyon/Imagenes/universo.PNG" alt="">
+                <h3>Lanzamiento</h3>
+                <p>Entrega de tu propio sitio web a la banguardia</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- ----------------------------------- es la parte de section acerca de ------------------------------------ -->
+    <section class="acerca_de" id="acerca_de"><!--funciona como voton con iddesde arriba-->
+        <h1 class="heading">Soporte</h1><!--h1 es de heading ya o habiamos definido solo que lo reutilizamo de nuevo-->
+        <!-- llamaremos al padre comluna y tendra pequeños bloques -->
+        <div class="columna">
+            <div class="image">
+                <img src="/P_Yanclyon/Imagenes/soporte.PNG" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Calidad de servicio</h3>
+                <p>
+                    Comunícate con el Soporte técnico de Galaxyware por teléfono o chat, 
+                    programa una reparación o pide una prueba y mucho más.
+                </p>
+                <p>
+                    ¿A que de debe el éxito de la comunicación?
+                    La popularidad radica en el hecho que estas facilitan la comunicación de una manera 
+                    muy superior a la natural. La comunicación rápida y eficiente, 
+                    se puede llevar a las operaciones diarias.
+                </p>
+
+                <div class="bottons">
+                    <!-- contaremos con dos botones  -->
+                    <a href="#" class="btn"><i class="fa fa-helmet-safety">  Soporte</i></a>
+                    <a href="#" class="btn"><i class="fa-solid fa-shuttle-space"> Ayuda</i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ----------------------------------- agregamos sucribete ------------------------------------ -->
+    <div class="sucribete">
+        <h3>Suscribete para mas novedades</h3>
+        <p>
+            Recibe noticias del momento.
+
+        </p>
+        <!-- realizaremos un formulario -->
+        <form action="">
+            <input type="email" placeholder="ingresa tu email">
+            <input type="submit" value="sucribete">
+        </form>
+    </div>
+    <!-- ----------------------------------- agregamos caja responsiva ------------------------------------ -->
+    <section class="opiniones" id="opiniones"><!--asi se da referencia directamentela parte de menu-->
+        <h1 class="heading">Opiniones de clientes</h1><!--hay codigo que se reutiliza-->
+        <div class="caja-contenedor">
+            <!-- esla primera parte de el usuario 1 -->
+            <div class="caja">
+                <i class="fa fa-robot"></i>
+                <div class="users">
+                    <img src="/P_Yanclyon/Imagenes/persona1.PNG" alt="">
+                    <h3>Diego</h3>
+                    <!-- con este icono es el usuario le va a dar la estrella de puntuaciópn -->
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <div class="comentarios">
+                            El servicio es bueno aunque los precios estan algo caros siendo que cada servicio son 
+                            en digital y tambien los servidores que ban muy lentos pero por lo demas perfecto.
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            <!-- es la segunda parte de el usuario 2 -->
+            <div class="caja">
+                <i class="fa fa-robot"></i>
+                <div class="users">
+                    <img src="/P_Yanclyon/Imagenes/persona2.PNG" alt="">
+                    <h3>Victor</h3>
+                    <!-- con este icono es el usuario le va a dar la estrella de puntuaciópn -->
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <div class="comentarios">
+                            la aplicación con más exacta ayuda para atención al cliente donde te brindan 
+                            apoyo los mejores expertos para solucionar los problemas que pases con tus servidores.
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <!-- es la tercera parte de el usuario 3 -->
+            <div class="caja">
+                <i class="fa fa-robot"></i>
+                <div class="users">
+                    <img src="/P_Yanclyon/Imagenes/persona3.PNG" alt="">
+                    <h3>Elia</h3>
+                    <!-- con este icono es el usuario le va a dar la estrella de puntuaciópn -->
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <div class="comentarios">
+                            Hola buenas necesito que un agente me contacte así me ayuda 
+                            con un problema en actualizar los Servicios de Google. Muchas gracias y recomiendo mucho esteservicio.
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </section>
+    <!-- vamos a realizar la parte de precios en esta seccion -->
+    <!-- ///////////////////////////////////////////////////////// -->
+    <!-- ------------------------------------------------------- -->
+    <section class="precios" id="precios"><!--par referenciar desde el menu-->
+        <h1 class="heading">Cotiza tu proyecto</h1>
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3 class="titulo"> Basico </h3>
+                <div class="tipos">$ 1000 <span>/factura</span></div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"> Web</i></li>
+                    <li><i class="fa-solid fa-check"> BBDD</i></li>
+                    <li><i class="fa-solid fa-times"> Adimistracion</i></li>
+                    <li><i class="fa-solid fa-times"> Dominio y Hosting</i></li>
+                </ul>
+                <!-- un boton -->
+                <a href="#" class="btn">Cotiza ya</a>
+            </div>
+        <!-- ------------------------------------------------------- -->
+        <div class="caja">
+            <h3 class="titulo"> Tradicional</h3>
+            <div class="tipos">$ 2000 <span>/factura</span></div>
+
+            <ul>
+                <li><i class="fa-solid fa-check"> Web</i></li>
+                <li><i class="fa-solid fa-check"> BBDD</i></li>
+                <li><i class="fa-solid fa-check"> Administracion</i></li>
+                <li><i class="fa-solid fa-times"> Dominio y Hosting</i></li>
+            </ul>
+            <!-- un boton -->
+            <a href="#" class="btn">Cotiza ya</a>
+        </div>
+        <!-- ------------------------------------------------------- -->
+        <div class="caja">
+            <h3 class="titulo"> Premium</h3>
+            <div class="tipos">$ 3000 <span>/factura</span></div>
+
+            <ul>
+                <li><i class="fa-solid fa-check"> Contabilidad</i></li>
+                <li><i class="fa-solid fa-check"> BBDD</i></li>
+                <li><i class="fa-solid fa-check"> Administracion</i></li>
+                <li><i class="fa-solid fa-check"> Dominio y Hosting</i></li>
+            </ul>
+            <!-- un boton -->
+            <a href="#" class="btn">Cotiza ya</a>
+        </div>
+        </div>
+
+    </section>
+    <!-- ------------------------realizaremos el formulario------------------------------- -->
+    <section class="contactos" id="contactos">
+        <!-- /*es la parte del logotipo de la imagen*/ -->
+        <div class="image">
+            <img src="/P_Yanclyon/Imagenes/galaxy-ware.png" alt="">
+        </div>
+        <form action="">
+            <h1 class="heading">Contactos</h1>
+            <div class="inputcaja">
+                <input type="text" required>
+                <label for="">Nombre</label>
+
+            </div>
+            <div class="inputcaja">
+                <input type="email" required>
+                <label for="">email</label>
+                
+            </div>
+            <div class="inputcaja">
+                <input type="number" required>
+                <label for="">Numero</label>
+                
+            </div>
+            <div class="inputcaja">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <label for="">Mensaje</label>
+                
+            </div>
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+
+    </section>
+
+    <!-- ------------------------realizaremos el foter pie de pagina------------------------------- -->
+    <div class="footer">
+        <div class="caja-contenedor">
+            <div class="caja">
+                <h3>Noticias</h3>
+                <p>
+                    Telcos más tecnológicas: <br> la transición se acelera
+                    Descubre cómo se hizo una de las mayores migraciones en 
+                    la historia de SAP con Vodafone.
+                </p>
+            </div>
+            <div class="caja">
+                <h3>Buscanos en:</h3>
+                <a href="https://www.facebook.com/Efren.30/"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                <a href="https://www.linkedin.com/in/efren-rodriguez-84b0811b7"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="https://twitter.com/EfrenRo63275272?t=Lz1QlMnolp1vrn3JwHOSFw&s=08"><i class="fa-brands fa-twitter"></i> twitter</a>
+                <a href="https://github.com/EfrenRoa12"><i class="fa-brands fa-github"></i>github</a>
+            </div>
+            <div class="caja">
+                <h3>Más información</h3>
+                <div class="info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>7971072964</p>
+                </div>
+
+                <h3>Correo: </h3>
+                <div class="info">
+                    <i class="fa-solid fa-at"></i>
+                    <p>efren7587@gmail.com</p>
+                </div>
+
+                <h3>Ubicación</h3>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Ciudad de México CP: 56600</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="credito">
+            &copy; copyright @2022 Efren Rodriguez
+        </div>
+    </div>    
+
+
+
+</body>
+</html>
