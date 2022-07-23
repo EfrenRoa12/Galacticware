@@ -248,7 +248,7 @@ header label{
 }
 /*trabajaremos con imagen*/
 .acerca_de .columna .image img{
-    width: 30%;/*ancho*/
+    width: 90%;/*ancho*/
 }
 /*la funcion es para que la imagen este en modo transparente*/
 .acerca_de .columna .image img{
